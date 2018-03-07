@@ -25,6 +25,7 @@ requirements:
     - python
     - pgspecial >=1.8.0
     - click >=4.1
+    - cli_helpers >=1.0.1
     - pygments >=2.0
     - prompt_toolkit >=1.0.10,<1.1.0
     - psycopg2 >=2.5.4
