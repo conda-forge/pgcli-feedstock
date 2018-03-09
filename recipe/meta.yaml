@@ -34,6 +34,7 @@ requirements:
     - humanize >=0.5.1
     - wcwidth >=0.1.6
     - setproctitle >=1.1.9
+    - tabulate
 
 test:
   imports:
