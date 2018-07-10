@@ -14,14 +14,15 @@ Summary: CLI for Postgres Database. With auto-completion and syntax highlighting
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pgcli-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pgcli-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pgcli-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pgcli-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pgcli-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pgcli-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pgcli-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pgcli-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pgcli/badges/version.svg)](https://anaconda.org/conda-forge/pgcli)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pgcli/badges/downloads.svg)](https://anaconda.org/conda-forge/pgcli)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pgcli-green.svg)](https://anaconda.org/conda-forge/pgcli) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pgcli.svg)](https://anaconda.org/conda-forge/pgcli) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pgcli.svg)](https://anaconda.org/conda-forge/pgcli) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pgcli.svg)](https://anaconda.org/conda-forge/pgcli) |
 
 Installing pgcli
 ================
