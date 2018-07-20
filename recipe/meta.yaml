@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "1.9.1" %}
-{% set sha256 = "8274dca13407b2904453018488d02302bce01df21ac3f3bf30a21b1880ce0ce8" %}
+{% set version = "1.10.1" %}
+{% set sha256 = "cd68b8e5fe9098951eafc4be36976791cb9c349be2b7692619cd3b5e4bccef1e" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - pgcli=pgcli.main:cli
