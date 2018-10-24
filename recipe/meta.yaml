@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "1.11.0" %}
-{% set sha256 = "caa417d90b50fe2d4580951944e7bc65518d9eed5e65d43182d2b893d3a219e7" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "f173bc8f3841c146a51a5e56e714b6d1abcf8d8aa402fe8274561c668bb2ae20" %}
 
 package:
   name: {{ name|lower }}
@@ -25,12 +25,12 @@ requirements:
     - setuptools
   run:
     - python
-    - pgspecial >=1.8.0
+    - pgspecial >=1.11.2
     - click >=4.1
     - cli_helpers >=1.0.1
     - pygments >=2.0
-    - prompt_toolkit >=1.0.10,<1.1.0
-    - psycopg2 >=2.5.4
+    - prompt_toolkit >=2.0.0,<3.0.0
+    - psycopg2 >=2.7.4
     - sqlparse >=0.2.2,<0.3.0
     - configobj >=5.0.6
     - humanize >=0.5.1
