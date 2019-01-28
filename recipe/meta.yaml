@@ -54,7 +54,7 @@ about:
   # xref: https://github.com/dbcli/pgcli/pull/728
   #license_file: LICENSE.txt
   summary: 'CLI for Postgres Database. With auto-completion and syntax highlighting.'
-  doc_url: http://simplejson.readthedocs.io/
+  doc_url: https://www.pgcli.com
   dev_url: https://github.com/dbcli/pgcli
 
 extra:
