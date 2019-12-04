@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "2.1.1" %}
-{% set sha256 = "84e0817a29c3cacaaaf85351422bdb90f230f2550e4af558c25536fd235ab6ca" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "54138a31e6736a34c63b84a6d134c9292c9a73543cc0f66e80a0aaf79259d39b" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pgcli=pgcli.main:cli
 
@@ -50,6 +50,7 @@ test:
 about:
   home: http://pgcli.com
   license: BSD-3-Clause
+  license_file: LICENSE.txt
   license_family: BSD
   # xref: https://github.com/dbcli/pgcli/pull/728
   #license_file: LICENSE.txt
