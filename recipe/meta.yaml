@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "54138a31e6736a34c63b84a6d134c9292c9a73543cc0f66e80a0aaf79259d39b" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "4920225838e8004ae6d2ec42f566e0a8b99c4bd42bc2c876d0de8501da0a4082" %}
 
 package:
   name: {{ name|lower }}
@@ -29,12 +29,11 @@ requirements:
     - click >=4.1
     - cli_helpers >=1.2.1
     - pygments >=2.0
-    - prompt_toolkit >=2.0.6,<3.0.0
+    - prompt_toolkit >=3.0.0,<4.0.0
     - psycopg2 >=2.8
     - sqlparse >=0.3.0,<0.4
     - configobj >=5.0.6
     - humanize >=0.5.1
-    - wcwidth >=0.1.6
     - setproctitle >=1.1.9
     - tabulate
 
@@ -54,7 +53,7 @@ about:
   license_family: BSD
   # xref: https://github.com/dbcli/pgcli/pull/728
   #license_file: LICENSE.txt
-  summary: 'CLI for Postgres Database. With auto-completion and syntax highlighting.'
+  summary: CLI for Postgres Database. With auto-completion and syntax highlighting.
   doc_url: http://simplejson.readthedocs.io/
   dev_url: https://github.com/dbcli/pgcli
 
