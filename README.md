@@ -5,11 +5,13 @@ Home: http://pgcli.com
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pgcli-feedstock/blob/master/LICENSE.txt)
 
 Summary: CLI for Postgres Database. With auto-completion and syntax highlighting.
 
+Development: https://github.com/dbcli/pgcli
 
+Documentation: http://simplejson.readthedocs.io/
 
 Current build status
 ====================
