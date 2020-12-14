@@ -21,13 +21,14 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - python
+    - python >=3.6
     - pgspecial >=1.11.8
     - click >=4.1
     - cli_helpers >=1.2.1
+    - pendulum
     - pygments >=2.0
     - prompt_toolkit >=3.0.0,<4.0.0
     - psycopg2 >=2.8
