@@ -34,7 +34,6 @@ requirements:
     - psycopg2 >=2.8
     - sqlparse >=0.3.0,<0.5
     - configobj >=5.0.6
-    - humanize >=0.5.1
     - setproctitle >=1.1.9
     - tabulate
 
