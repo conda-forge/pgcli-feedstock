@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "3.2.0" %}
-{% set sha256 = "6cde97e71996bf910a40b579e5285483c10ea04962a08def01c12433d5f7c6b7" %}
+{% set version = "3.3.0" %}
+{% set sha256 = "3d0ed40df691d60254ccb4d5654a52c1c6373f77d2b3cf6a90aea6ee99fea439" %}
 
 package:
   name: {{ name|lower }}
@@ -27,15 +27,14 @@ requirements:
     - python >=3.6
     - pgspecial >=1.11.8
     - click >=4.1
-    - cli_helpers >=1.2.1
-    - pendulum
-    - pygments >=2.0
+    - cli_helpers >=2.0.0
+    - pendulum >=2.1.0
+    - pygments >=2.0,<2.11.1
     - prompt_toolkit >=3.0.0,<4.0.0
     - psycopg2 >=2.8
     - sqlparse >=0.3.0,<0.5
     - configobj >=5.0.6
     - setproctitle >=1.1.9
-    - tabulate
 
 test:
   imports:
