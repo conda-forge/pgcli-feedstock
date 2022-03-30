@@ -25,7 +25,7 @@ requirements:
     - setuptools
   run:
     - python >=3.6
-    - pgspecial >=1.11.8
+    - pgspecial >=1.13.1
     - click >=4.1
     - cli_helpers >=2.2.1
     - pendulum >=2.1.0
