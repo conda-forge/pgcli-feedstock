@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "3.5.0" %}
-{% set sha256 = "cc448d95159fc0903d36182992778a096eda5752d660d47671383c8e2bf633f1" %}
+{% set version = "4.0.1" %}
+{% set sha256 = "f2feea2099ce1ad5e8a9d5d93b0edaf60dc61e97b21b75e91d9723939ce53bd2" %}
 
 package:
   name: {{ name|lower }}
