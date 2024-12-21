@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pgcli=pgcli.main:cli
@@ -21,10 +21,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pgspecial >=2.0.0
     - click >=4.1
     - cli_helpers >=2.2.1
@@ -37,6 +37,8 @@ requirements:
     - setproctitle >=1.1.9
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pgcli
     - pgcli.packages
