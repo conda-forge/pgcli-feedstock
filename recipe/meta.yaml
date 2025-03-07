@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "4.1.0" %}
-{% set sha256 = "3fd16c8b51bd0145ff618c2c73264bcd854ba866aa206d4f076851f641b9b215" %}
+{% set version = "4.2.0" %}
+{% set sha256 = "0d3ed9916f3bbe245c283bf484453080ff00227ab085660c6cfbb0ec53f2e9e6" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pgcli=pgcli.main:cli
@@ -31,7 +31,7 @@ requirements:
     - pygments >=2.0
     - prompt_toolkit >=3.0.0,<4.0.0
     - psycopg >=3.0.14
-    - sqlparse >=0.3.0,<0.5
+    - sqlparse >=0.3.0,<0.6
     - configobj >=5.0.6
     - setproctitle >=1.1.9
 
