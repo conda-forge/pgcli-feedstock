@@ -31,7 +31,7 @@ requirements:
     - pygments >=2.0
     - prompt_toolkit >=3.0.0,<4.0.0
     - psycopg >=3.0.14
-    - sqlparse >=0.3.0,<0.5
+    - sqlparse >=0.3.0,<0.6
     - configobj >=5.0.6
     - setproctitle >=1.1.9
 
