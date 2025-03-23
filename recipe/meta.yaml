@@ -27,13 +27,14 @@ requirements:
     - python >={{ python_min }}
     - pgspecial >=2.0.0
     - click >=4.1
-    - cli_helpers >=2.2.1
+    - cli_helpers >=2.4.0
     - pygments >=2.0
     - prompt_toolkit >=3.0.0,<4.0.0
     - psycopg >=3.0.14
     - sqlparse >=0.3.0,<0.6
     - configobj >=5.0.6
     - setproctitle >=1.1.9
+    - tzlocal >=5.2
 
 test:
   requires:
