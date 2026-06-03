@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "4.4.0" %}
-{% set sha256 = "bd5f8d68af28fd69551a3cb48a2849cad5f6854aa48022e9d98c6236d109eeae" %}
+{% set version = "4.5.0" %}
+{% set sha256 = "9dce07f5b628068156256cb818e5191a773afe6eeb7054f210fa892813625e3e" %}
 
 package:
   name: {{ name|lower }}
@@ -26,10 +26,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - pgspecial >=2.0.0
-    - click >=4.1
+    - click >=4.1,!=8.1.8,!=8.2.*,!=8.3.0,<9
     - cli_helpers >=2.4.0
     - pygments >=2.0
-    - prompt_toolkit >=3.0.0,<4.0.0
+    - prompt_toolkit >=2.0.6,<4.0.0
     - psycopg >=3.0.14
     - sqlparse >=0.3.0,<0.6
     - configobj >=5.0.6
