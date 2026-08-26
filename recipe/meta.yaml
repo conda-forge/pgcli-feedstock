@@ -1,6 +1,6 @@
 {% set name = "pgcli" %}
-{% set version = "4.5.0" %}
-{% set sha256 = "9dce07f5b628068156256cb818e5191a773afe6eeb7054f210fa892813625e3e" %}
+{% set version = "4.6.0" %}
+{% set sha256 = "4b0633a6ce753ea38fb1fe2dc54b66b732c4d0b29fadf48cad78b2e7f6636d9d" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -31,7 +31,7 @@ requirements:
     - pygments >=2.0
     - prompt_toolkit >=2.0.6,<4.0.0
     - psycopg >=3.0.14
-    - sqlparse >=0.3.0,<0.6
+    - sqlparse >=0.3.0,<0.7
     - configobj >=5.0.6
     - setproctitle >=1.1.9
     - tzlocal >=5.2
